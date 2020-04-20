@@ -1,0 +1,32 @@
+package com.revature.driver;
+
+import java.util.Scanner;
+import com.revature.beans.*;
+
+public class Driver {
+	static void input(Scanner in, User u) {
+		System.out.print("Enter id: ");
+		int id = in.nextInt();
+		System.out.print("Enter username: ");
+		String username = in.next();
+		System.out.print("Enter password: ");
+		String password = in.next();
+		
+		u = new User(id, username, password);
+	}
+	static void input(Scanner in, Order o) {
+		System.out.print("Enter id: ");
+		int id = in.nextInt();
+		System.out.print("Enter price: ");
+		double price = in.nextDouble();
+		System.out.print("Enter item name: ");
+		String name = in.next();
+		
+		o = new Order(id, price, name);
+	}
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+	}
+}

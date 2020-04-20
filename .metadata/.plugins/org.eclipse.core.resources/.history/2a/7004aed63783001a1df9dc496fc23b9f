@@ -1,0 +1,27 @@
+package com.revature.driver;
+
+import java.util.Scanner;
+import com.revature.beans.*;
+
+public class Driver {
+	static void input(Scanner in, User u) {
+		System.out.print("Enter id: ");
+		int id = in.nextInt();
+		System.out.print("Enter id: ");
+		int id = in.nextInt();
+		System.out.print("Enter id: ");
+		int id = in.nextInt();
+		System.out.print("Enter id: ");
+		int id = in.nextInt();
+		
+		u = new User(in.nextInt(), in.next(), in.next(), in.next())
+	}
+	static void input(Scanner in, Order o) {
+		o = new Order(in.nextInt(), in.nextDouble(), in.next(), in.nextLine());
+	}
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+	}
+}
